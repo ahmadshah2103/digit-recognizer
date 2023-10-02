@@ -4,7 +4,7 @@ import numpy as np
 import streamlit as st
 import tensorflow as tf
 
-model = tf.keras.models.load_model('model/tf_CNN_v2.model')
+model = tf.keras.models.load_model('../tf_CNN_v2.model')
 
 st.title('Digit Recognizer')
 
