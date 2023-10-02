@@ -15,7 +15,6 @@ input_image = st.file_uploader('Upload an image of a digit', type=['png', 'jpg',
 def recognize_digit(img):
     vectorized_img = plt.imread(img)
     gray_img = cv2.cvtColor(vectorized_img, cv2.COLOR_BGR2GRAY)
-    gray_img = gray_img.reshape(280, 280)
     gray_img = cv2.resize(gray_img, (28, 28))
     gray_img = gray_img.reshape(1, 28, 28, 1)
     probabilities = tf.nn.softmax(model.predict([gray_img]))
