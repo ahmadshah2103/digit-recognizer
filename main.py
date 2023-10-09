@@ -5,7 +5,7 @@ import streamlit as st # Web app API
 import tensorflow as tf # Main DL library
 
 # Model, import from a .model folder.
-model = tf.keras.models.load_model('../tf_CNN_v2.model')
+model = tf.keras.models.load_model('model/tf_CNN_v2.model')
 
 # Title
 st.title('Digit Recognizer')
